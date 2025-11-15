@@ -15,16 +15,22 @@ dec.addEventListener('click', ()=>{
     if(count===0){
         return;
     }
+    let color = changeColor();
     count--
+    if(count!=0){
+        counter.style.color = `${color}`;
+    }else{
+        counter.style.color = 'white';
+    }
     console.log(count);
     counter.innerHTML = count;
 })
 
 function changeColor() {
-    let hex = '0123456789abcdef';
+    let hex = '6789abcdef';
     let col = '#'
     for(let i =0; i<6; i++){
-        col += hex[Math.floor(Math.random()*8)]
+        col += hex[Math.floor(Math.random()*10)]
     }
     return col;
 }
