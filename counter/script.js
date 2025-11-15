@@ -1,6 +1,6 @@
 var counter = document.querySelector('#counter')
-var inc = document.querySelector('#inc')
-var dec = document.querySelector('#dec')
+var inc = document.querySelector('#add')
+var dec = document.querySelector('#sub')
 
 
 var count = 0
